@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/*초기화*/
+*{ margin: 0; padding: 0; }
+ol,ul { list-style: none; }
+a { color: #000; text-decoration: none; }
+table { border-collapse: collapse; }
+fieldset { border: 0; }
+legend { display: none; }
+input { vertical-align: middle; border: 0; }
+.clearfix:after { content: ""; display: block; clear: both; }
+
+
+body { font-family: 'Open Sans','Noto Sans KR', sans-serif; font-size: 16px; line-height: 26px; color: #000; }
+#wrap { min-width: 1200px; overflow: hidden; }
+
+
+
+/*header*/
+#header { background: #f3c53c; }
+#header .top { width: 100%; height: 50px; color: #fff; background: #a2bf3f; position: relative; }
+#header .top ul { position: absolute; top: 10px; left: 50%; margin-left: -200px; }
+#header .top ul li { float: left; }
+#header .top ul li:nth-child(2) a { color: #fff; }
+#header .top ul img { margin-right: 10px;}
+
+#header .header_inner { width: 1200px; height: 150px; margin: 0 auto; position: relative; }
+#header .header_inner h1 { position: absolute; left: 0; top: 20px; }
+#header .header_inner form { position: absolute; left: 50%; transform: translateX(-25%); top: 30px; margin-left: -100px; display: inline-block;  }
+#header input { background: #fff; height: 35px; }
+#header input[type="text"] { width: 180px; color: #000; }
+#header input[type="submit"] { font-size: 0; background:#fff url('../images/common/icon_search.png') no-repeat center center; width: 40px; cursor: pointer;}
+
+
+
+
+
+#header .header_inner .util { position: absolute; top: 30px; right: 0; }
+#header .header_inner .util li { float: left; }
+#header .header_inner .util li a {padding: 10px 20px; font-size: 14px; color: #fff
+}
+#header .header_inner .gnb { width: 1200px; position: absolute; left: 0; top:84px; z-index: 99; }
+#header .header_inner .gnb > li { float: left; width: calc(100%/6); text-align: center; }
+#header .header_inner .gnb > li:hover > a { color: #fff; }
+#header .header_inner .gnb > li >a { display: block; box-sizing: border-box; font-size: 18px; color: #307302; font-weight: bold; padding: 20px 40px; transition: color 0.5s;  }
+#header .header_inner .gnb > li:nth-child(4) > a { padding: 20px 0; }
+
+/*2차메뉴*/
+#header .dp2 { transition: background 1s; padding: 20px 0; }
+#header .dp2 li a { display: block; color: #fff; text-align: center; padding: 10px 0;  transition: color 0.5s;}
+#header .dp2 li a:hover { color: #317403; font-weight: bold; }
+.dp2_bg { width: 100%; position: absolute; left: 0; top: 200px; height: 270px; background: #a2bf3f; z-index: 9; }
+
+
+
+
+
+
+/*main banner*/
+#main_banner { height: 580px; position: relative; }
+
+
+
+
+
+/*bxslider css*/
+#main_banner .bx-pager { position:absolute; bottom:30px; left:50%; transform: translateX(-50%); }
+#main_banner .bx-pager-item { float:left; }
+#main_banner .bx-pager a { background:#67625e; font-size: 0; display:block; width:10px; height:10px; margin:0 5px; border-radius:5px; transition:all 0.2s; }
+#main_banner .bx-pager a.active { background:#758246; width:30px; }
+
+#main_banner .bx-controls-direction a { display: block; position: absolute; top: 50%; width: 40px; height: 40px; font-size: 0; border-top: 5px solid #758246; border-left: 5px solid #758246; }
+#main_banner .bx-prev { left: 10%; transform: rotate(-45deg) translateY(-50%); }
+#main_banner .bx-next { right: 10%; transform: rotate(135deg) translateY(50%); }
+
+ h2 { text-align: center; font-size: 40px; margin-bottom: 70px; color:#307302; }
+
+
+
+/*best*/
+#best { width: 1200px; margin: 200px auto; }
+#best .best_diet { margin-bottom: 20px;}
+#best .best_diet> div { float: left; }
+#best .best_health> div { float: left; }
+#best .best_diet,.best_health { width: 1200px; height: 260px; overflow: hidden; }
+#best .tit { background: #f3c53c; color: #fff;  }
+#best .best_diet .tit {padding: 50px 170px 140px 60px; }
+#best h3 { font-size: 30px;}
+#best p { font-size: 20px; padding-top:20px; }
+#best .salad { width: 350px; }
+#best .salad img { 100%; }
+#best .best_health .tit { text-align: right; padding: 50px 60px 140px 170px; }
+#best .best1 { width:350px; height: 260px; position: relative; }
+#best .best2 { width:350px; height: 260px; position: relative; }
+#best .best1 .salad { position: absolute; top: 0; left: 0; }
+#best .best1 .detail { position: absolute; top: 260px ; left: 0px; box-sizing: border-box; padding: 213px 58px 25px 181px; background: rgba(0,0,0,0.5) url('../images/main/icon_next.png') no-repeat 300px 205px; transition: transform 0.5s;   }
+#best .best2 .detail { position: absolute; top: 260px ; right: 0px; box-sizing: border-box;padding: 213px 10px 25px 185px; background: rgba(0,0,0,0.5) url('../images/main/icon_next.png') no-repeat 300px 205px; transition: transform 0.5s; }
+#best .best1 .detail a { display: inline-block; color: #fff; font-size: 20px; }
+#best .best2 .detail a { display: inline-block; color: #fff; font-size: 20px; }
+#best .best2 .salad { position: absolute; top: 0; left: 0; }
+#best .best2 .detail { position: absolute; top: 260px; left: 0; }
+
+#best .best1:hover .detail { transform: translateY(-260px); }
+#best .best2:hover .detail { transform: translateY(-260px); }
+
+
+
+
+/*event_banner*/
+#event_banner { width: 100%; height: 600px; margin: 200px auto; position: relative;  }
+#event_banner .bg { width: 100%; height: 450px; position: absolute; left: 0; top: 100px; }
+#event_banner .bg_cover { width: 100%; height: 450px; position: absolute; left: 0; top: 100px; background:  rgba(0, 0, 0,0.3);}
+#event_banner .event { width: 100%; height: 450px; position: absolute; left: 0;  top: 100px;padding: 150px 0 ; color: #fff; text-align: center;  box-sizing: border-box; }
+#event_banner .stit { font-size: 40px; font-weight: bold; }
+#event_banner .desc { font-size: 40px; font-weight: bold; margin-top: 50px; }
+#event_banner .desc span {font-size: 60px;}
+
+
+
+
+/*magazine*/
+#magazine { width: 1200px; margin: 200px auto; }
+#magazine .food_magazine { height: 370px; position: relative; }
+#magazine .food_magazine li { float: left; }
+#magazine iframe { position: absolute; left: 0; top: 0; border: 0; }
+#magazine img { position: absolute; right: 0; top: 0; }
+#magazine a { position: absolute; right: 500px; top:40px; color: #fff; font-size: 20px;}
+
+
+
+/*review*/
+#review { width: 1200px;margin: 200px auto; }
+#review .review_inner { height: 280px; overflow: hidden;  }
+#review .review_inner div { float: left;  }
+#review .tit { background: #f3c53c; color: #fff; padding: 50px 0px 100px 60px; width: 320px; box-sizing: border-box;  }
+#review h3 { font-size: 30px;}
+#review .tit p { font-size: 20px; padding-top:20px; line-height: 20px; }
+#review .photo_review1 { width: 440px; height: 280px; position: relative;  }
+#review .photo_review2 { width: 440px; height: 280px; position: relative;  }
+#review .detail { position: absolute; left:0px; top: 280px; transition: transform 0.5s;}
+#review .detail a { display:block; color: #fff; background: rgba(0,0,0,0.5) url('../images/main/icon_next.png') no-repeat 255px 115px; padding: 120px 183px 133px 160px ; box-sizing: border-box; font-size: 20px; }
+#review .photo_review1:hover .detail { transform: translateY(-280px);}
+#review .photo_review2:hover .detail { transform: translateY(-280px);}
+
+
+
+/*sns*/
+#sns {width: 1200px; margin: 200px auto; position: relative;}
+#sns p { text-align: center; color: #666; margin-bottom: 50px;  }
+#sns img { width: 100%; }
+#sns .bx-controls-direction a { display: block; position: absolute; top: 50%; width: 30px; height: 30px; font-size: 0; border-top: 3px solid #999; border-left: 3px solid #999;  }
+#sns .bx-prev { left: -100px; transform: rotate(-45deg) translateY(70px); }
+#sns .bx-next { right: 0; transform: rotate(135deg) translateY(-70px); }
+
+
+
+/*footer*/
+#footer { width: 100%;  background: #f2f2f2; }
+#footer .footer_inner { width: 1200px; height: 250px; margin: 0 auto; position: relative; color: #999; }
+#footer p { position: absolute; top: 50px; left: 0; }
+#footer .util { position: absolute; top:60px; left: 165px; }
+#footer .util li { float: left; margin-right: 20px; }
+#footer .util li a { color: #999; }
+#footer address { position: absolute; left: 165px; top: 120px; font-style: normal; }
+#footer .etc { position: absolute; top: 50px; right: 0;}
+#footer .sns { position: absolute; top: 160px; right: 190px; }
+#footer .sns li { float: left; margin-left: 15px; }
+
+.gotop { position: fixed; right: 100px; bottom: 100px; cursor: pointer; }
+
+
+
+
+
+
+
+
+
