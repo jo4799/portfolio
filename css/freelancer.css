@@ -35,6 +35,9 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+.uxui { text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;}
 
 hr.star-light,
 hr.star-primary {
@@ -88,7 +91,7 @@ header {
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
-    text-align: center;
+    
 }
 .top_bg { 
     position: absolute;
@@ -119,18 +122,18 @@ header img {
 header .intro-text .name {
     display: block;
    
-    font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Inter', sans-serif;
     font-size: 7em;
-    font-weight:100;
+    font-weight:600;
 }
 
 header .intro-text .skills {
     display: block;
     
     text-transform: uppercase;
-    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Inter', sans-serif;
     font-size: 5em;
-    font-weight: 100;
+    font-weight: 300;
     
 }
 
