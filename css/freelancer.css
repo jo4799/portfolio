@@ -98,7 +98,7 @@ header .container {
     left: 0;
     top:0;
     width: 100%;
-    height:750px;
+    height:800px;
     overflow: hidden;
 }
 
@@ -139,8 +139,9 @@ header .intro-text .skills {
 }
 
 /* Tablets */
-@media all and (min-width : 768px) and (max-width : 1024px) {
-    
+@media all and (min-width : 768px) and (max-width : 1000px) {
+     header img { display: none; }
+    header .skills { margin-bottom: 300px;}
 }
 
 
@@ -149,11 +150,11 @@ header .intro-text .skills {
 
 @media(max-width:767px) {
     header .ill { padding: 7.556% 25.468%; box-sizing: border-box; margin: 0 auto;} /*  padding: 0 0 150px 180px */
-    header img { display: none; }
+   
     header .intro-text .name {
-        font-size: 7em;
-        
-    }
+        font-size: 7em;}
+     header img { display: none; }    
+
     video { height: 500px;}
     header .intro-text .skills {
         font-size: 3.5em;
@@ -217,8 +218,8 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    background: #000;
+    color: #000;
+    background: #fff;
 }
 
 section.success a,
@@ -229,6 +230,12 @@ section.success a.active {
     outline: 0;
     color: #2c3e50;
 }
+
+#about .my p { text-align: center;}
+
+
+
+
 
 @media(max-width:767px) {
     section {
