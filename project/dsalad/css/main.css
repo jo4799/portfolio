@@ -120,10 +120,9 @@ body { font-family: 'Open Sans','Noto Sans KR', sans-serif; font-size: 16px; lin
 
 /*magazine*/
 #magazine { width: 1200px; margin: 200px auto; }
-#magazine .food_magazine { height: 370px; position: relative; }
-#magazine .food_magazine li { float: left; }
-#magazine iframe { position: absolute; left: 0; top: 0; border: 0; }
-#magazine img { position: absolute; right: 0; top: 0; }
+#magazine .food_magazine { height: 340px; position: relative; }
+#magazine .food_magazine li { display: flex; }
+#magazine img { position: absolute; right: 0; top: 6px; height: 338px; width: 600px; }
 #magazine a { position: absolute; right: 500px; top:40px; color: #fff; font-size: 20px;}
 
 

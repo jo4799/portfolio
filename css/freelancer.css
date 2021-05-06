@@ -208,12 +208,9 @@ header .intro-text .skills {
     border: 0;
 }
 
-section {
-    padding: 100px 0;
-}
 
 section h2 {
-    margin: 0;
+  
     font-size: 3em;
 }
 
@@ -231,16 +228,66 @@ section.success a.active {
     color: #2c3e50;
 }
 
-#about .my p { text-align: center;}
 
+
+
+#skills .video { height: 500px;overflow: hidden; position: absolute; left: 0; top: 0; opacity: 0.8;  }
+
+.mys { position: relative; height: 500px;}
+ul.skill { display: flex; justify-content: space-between; color: #591212; font-weight: bold; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+
+.chart {
+    display: inline-block;
+    width: 110px;
+    height: 110px; /* width: 110px;
+    height: 110px; */
+    margin: 10px 50px;
+    vertical-align: top;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 18px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+}
+.chart span {
+    display: block;
+    font-size: 2em;
+    font-weight: normal;
+}
+.chart canvas{ 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media all and (min-width : 768px) and (max-width : 1300px) {
+  .skill { flex-wrap: wrap;  width: 100%; }
+    
+    
+}
+
+
+@media all and (max-width : 767px) {
+  .skill { flex-wrap: wrap; width: 100%; }  
+    
+}
+
+
+#about .my { display: flex; justify-content: center; align-items: center; }
+#about .my .desc { text-align: left; padding-left: 50px; }
 
 
 
 
 @media(max-width:767px) {
-    section {
-        padding: 75px 0;
-    }
+   
+    
 
     section.first {
         padding-top: 75px;
@@ -380,6 +427,7 @@ form .row:first-child .floating-label-form-group {
 
 footer {
     color: #fff;
+    margin-top: 100px;
 }
 
 footer h3 {
@@ -501,3 +549,10 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+h2 { color: #591212; margin: 100px 0 50px; }
+.desc span { font-weight: bold; margin-left: 10px;}
+.my p { font-size: 1.5em; text-align: center;}
+
+
+
