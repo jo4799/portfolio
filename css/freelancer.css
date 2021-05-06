@@ -231,7 +231,7 @@ section.success a.active {
 
 
 
-#skills .video { height: 500px;overflow: hidden; position: absolute; left: 0; top: 0; opacity: 0.8;  }
+#skills .video { height: 500px;overflow: hidden; position: absolute; left: 0; top: 50px; opacity: 0.8;  }
 
 .mys { position: relative; height: 500px;}
 ul.skill { display: flex; justify-content: space-between; color: #591212; font-weight: bold; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
