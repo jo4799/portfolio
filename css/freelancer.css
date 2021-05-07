@@ -234,7 +234,7 @@ section.success a.active {
 #skills .video { height: 500px;overflow: hidden; position: absolute; left: 0; top: 50px; opacity: 0.8;  }
 
 .mys { position: relative; height: 500px;}
-ul.skill { display: flex; justify-content: space-between; color: #591212; font-weight: bold; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+ul.skill { display: flex; justify-content: space-between; color: #591212; font-weight: bold; position: absolute; left: 50%; top: 60%; transform: translate(-50%, -50%); }
 
 
 .chart {
@@ -280,8 +280,8 @@ ul.skill { display: flex; justify-content: space-between; color: #591212; font-w
 
 
 #about .my { display: flex; justify-content: center; align-items: center; }
-#about .my .desc { text-align: left; padding-left: 50px; }
-
+#about .my span { margin-left: 30px; }
+#about h2 { text-align: center; margin-top: 300px; }
 
 
 
@@ -445,7 +445,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #591212;
+    background-color: #F2BE5C;
 }
 
 .btn-social {
@@ -550,9 +550,10 @@ footer .footer-below {
     opacity: 0;
 }
 
-h2 { color: #591212; margin: 100px 0 50px; }
-.desc span { font-weight: bold; margin-left: 10px;}
-.my p { font-size: 1.5em; text-align: center;}
+h2 { color: #F2BE5C; margin: 200px 0 50px; }
+.desc span { font-weight: bold;}
+.my p { font-size: 1.5em; }
+.my ul { list-style: none; margin: 0;  }
 
 
 
