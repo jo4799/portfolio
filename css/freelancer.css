@@ -104,7 +104,7 @@ header .container {
 }
 
 .ill { display: flex; justify-content: space-between;
-padding: 7.812% 5% 0 5%; align-items: center; }/* padding-top: 150px; */
+ align-items: center; }/* padding-top: 150px; */
 
 video {
     
@@ -125,24 +125,29 @@ header .intro-text .name {
     display: block;
    
   font-family: 'Inter', sans-serif;
-    font-size: 7em;
+    font-size: 5em;
     font-weight:600;
+    line-height: 1.2;
+  
 }
 
-header .intro-text .skills {
+header .intro-text .na {
     display: block;
-    
+    padding-top: 50px;
     text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
-    font-size: 5em;
+   font-family: 'Black Han Sans', sans-serif;
+    font-size:3em;
     font-weight: 300;
+    
     
 }
 
 /* Tablets */
 @media all and (min-width : 768px) and (max-width : 1000px) {
-     header img { display: none; }
-    header .skills { margin-bottom: 300px;}
+    header .ill { text-align: center; }
+    header img { display: none; }
+    header .name { padding-top: 200px;}
+    header .na { margin-bottom: 300px;}
 }
 
 
@@ -150,15 +155,18 @@ header .intro-text .skills {
 
 
 @media(max-width:767px) {
-    header .ill { padding: 7.556% 25.468%; box-sizing: border-box; margin: 0 auto;} /*  padding: 0 0 150px 180px */
+    
+
+    header .container { padding-top: 50px;}
+    header .ill { margin: 0 auto; height: 400px; text-align: center;} /*  padding: 0 0 150px 180px */
    
     header .intro-text .name {
-        font-size: 7em;}
+        font-size: 4em;}
      header img { display: none; }    
 
     video { height: 500px;}
-    header .intro-text .skills {
-        font-size: 3.5em;
+    header .intro-text .na {
+        font-size: 3em;
     }
 }
 
@@ -228,7 +236,6 @@ section.success a.active {
     outline: 0;
     color: #2c3e50;
 }
-
 
 
 
