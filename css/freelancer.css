@@ -157,7 +157,7 @@ font-family: 'Do Hyeon', sans-serif;
 @media(max-width:767px) {
     
 
-    header .container { padding-top: 50px;}
+    header .container { padding-top: 250px;}
     header .ill { margin: 0 auto; height: 400px; text-align: center;} /*  padding: 0 0 150px 180px */
    
     header .intro-text .name {
@@ -172,7 +172,7 @@ font-family: 'Do Hyeon', sans-serif;
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 10px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
